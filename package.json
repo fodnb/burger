@@ -23,5 +23,9 @@
     "method-override": "^2.3.8",
     "mysql": "^2.13.0",
     "nodemon": "^1.11.0"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
   }
 }
