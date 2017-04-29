@@ -20,10 +20,9 @@ connection.connect(function(err) {
 // if(process.env.JAWSDB_URL){
 
 // }else {
-    
+
 // }
 
-mysql://so6s2ykuazm4p8of:k7jx03r8r0mynxxu@otmaa16c1i9nwrek.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ejvimz4osj2gxy3x
 
 module.exports = connection;
 
