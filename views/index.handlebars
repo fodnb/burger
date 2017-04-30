@@ -1,8 +1,12 @@
+<div id="title" class="jumbotron">
 <h1> Eat-Da-Burger </h1> 
-
+</div>
 
 
 <!-- this is adding all burgers on the page that have not been eaten yet and adding a button-->
+<div id="uneaten" class="col-sm-6 container">
+
+<h2> NEED TO EAT </h2>
 <ul>
 {{#each burgers}}
 {{#unless this.devoured}}
@@ -17,15 +21,12 @@
 {{/unless}}
 {{/each}}
 </ul>
+</div>
 
 
 
 
-<br>
-<br>
-<hr>
-<br>
-<br>
+<div id="eaten" class="col-sm-6 container">
 <h2> BURGERS EATEN!!!!</h2>
 <!-- this is adding all the burgers on the page that have been eaten -->
 <ul>
@@ -49,3 +50,4 @@
 
 </div>
 </form>
+</div>

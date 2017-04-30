@@ -32,19 +32,19 @@ var mysql = require("mysql");
 
 // module.exports = connection;
 
-var connection;
+// var connection;
 
-if(process.env.JAWSDB_URL) {
-    connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else{
+// if(process.env.JAWSDB_URL) {
+//     connection = mysql.createConnection(process.env.JAWSDB_URL);
+// } else{
     connection = mysql.createConnection({
-        root: 3000,
+        root: 3306,
         host: 'localhost',
         user: 'root',
         password: 'Buddy#13',
         database: 'burgers_db',
     });
-};
+// };
 
 connection.connect(function(err) {
     if (err) {
