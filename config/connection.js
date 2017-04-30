@@ -5,7 +5,8 @@ var mysql = require("mysql");
         host: 'localHost',
         user: 'root',
         password: 'Buddy#13',
-        database: 'burgers_db'
+        database: 'burgers_db',
+        socketPath: '/var/run/mysqld/mysqld.sock'
     });
 
 connection.connect(function(err) {
