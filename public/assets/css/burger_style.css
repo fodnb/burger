@@ -5,6 +5,7 @@ body {
     margin: 0 auto;
     font-family: "times new roman";
     text-transform: uppercase;
+    background-color: #ffcd54;
 }
 
 h1 {
@@ -55,6 +56,8 @@ button {
 
 li {
       margin: 25px;
+      overflow: auto;
+     
 }
 
 #addburger{
@@ -63,4 +66,17 @@ li {
     align-content: center;
     position: relative;
     width: 100%;
+}
+
+input {
+    width: 50%;
+}
+
+#submit {
+    width: 25%;
+}
+
+#instructions {
+    text-align: center;
+    text-transform: none;
 }

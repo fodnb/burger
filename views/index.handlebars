@@ -16,7 +16,7 @@
 <li>
 <form action="/{{this.id}}?_method=PUT" method="POST">
 <input type="hidden" name="devoured" value="true">
-<button type="submit" id="submit">DEVOUR!</button>
+<button type="submit" class="btn-primary btn">DEVOUR!</button>
 </form>
 {{this.id}}. {{this.burger_name}}
 </li>
@@ -53,7 +53,8 @@
 <div class="form-group">
 <label for="newburger">ADD A BURGER!</label>
 <input type="text" name="newburger" id="newburger">
-	
+<input type="submit" name="submit" id="submit" class="btn-primary btn">	
 
 </div>
+<h2 id="instructions"> Enter a Burger you want to eat,Click the "SUBMIT" button.</h2>
 </form>
