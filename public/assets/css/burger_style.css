@@ -33,7 +33,7 @@ button {
 #uneaten {
     font-size: 24px;
     overflow: auto;
-
+    max-width: 45%;
     float: left;
 }
 
@@ -53,4 +53,12 @@ button {
 
 li {
       margin: 25px;
+}
+
+#addburger{
+    font-size: 24px;
+    overflow: auto;
+    align-content: center;
+    position: relative;
+    width: 100%;
 }
