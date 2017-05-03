@@ -1,5 +1,7 @@
 <div id="title" class="jumbotron">
 <h1> Eat-Da-Burger </h1> 
+<img src="cssfiles/img/download.jpg">
+
 </div>
 
 
@@ -10,14 +12,15 @@
 <ul>
 {{#each burgers}}
 {{#unless this.devoured}}
+<div>
 <li>
-{{this.id}}. {{this.burger_name}}
-
 <form action="/{{this.id}}?_method=PUT" method="POST">
 <input type="hidden" name="devoured" value="true">
 <button type="submit" id="submit">DEVOUR!</button>
 </form>
+{{this.id}}. {{this.burger_name}}
 </li>
+</div>
 {{/unless}}
 {{/each}}
 </ul>
@@ -42,6 +45,10 @@
 
 
 
+
+</div>
+
+
 <form class="create-update-form" action="/" method="POST">
 <div class="form-group">
 <label for="newburger">ADD A BURGER!</label>
@@ -50,4 +57,3 @@
 
 </div>
 </form>
-</div>
